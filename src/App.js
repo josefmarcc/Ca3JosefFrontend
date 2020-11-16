@@ -42,7 +42,7 @@ function App() {
       <Route
         {...rest}
         render={() => {
-          return loggedIn === true && user.roles === "user,admin" ? (
+          return loggedIn === true && user.roles === "admin,user" ? (
             children
           ) : (
             <Redirect to="/login-out" />
